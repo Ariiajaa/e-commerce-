@@ -1,14 +1,31 @@
-# E-Commerce Dashboard Analysis
+# 📊 E-Commerce Dashboard Analysis
 
 ## 📌 Deskripsi Proyek
 
-Proyek ini bertujuan untuk menganalisis performa bisnis e-commerce menggunakan dataset Olist.
-Analisis dilakukan melalui proses data cleaning, exploratory data analysis (EDA),
-serta visualisasi data dalam bentuk dashboard interaktif menggunakan Streamlit.
+Proyek ini bertujuan untuk menganalisis performa bisnis e-commerce menggunakan **Brazilian E-Commerce Public Dataset (Olist)**.  
+Analisis dilakukan melalui tahapan:
+
+- Data Cleaning
+- Exploratory Data Analysis (EDA)
+- Customer Segmentation (RFM)
+- Interactive Data Visualization menggunakan **Streamlit**
+
+Dashboard dibuat agar pengguna dapat mengeksplorasi data secara mandiri melalui filter interaktif.
+
+---
+
+## 🎯 Tujuan Analisis
+
+- Mengidentifikasi tren revenue dari waktu ke waktu
+- Mengetahui jumlah pelanggan dan pertumbuhan order
+- Melakukan segmentasi pelanggan menggunakan metode **RFM**
+- Menganalisis persebaran geografis pelanggan
+
+---
 
 ## 📂 Struktur Folder
 
-DASBOARD E-COMMERCE
+DASHBOARD E-COMMERCE
 ├── dashboard
 │ ├── dashboard.py
 │ ├── main_df.csv
@@ -18,10 +35,12 @@ DASBOARD E-COMMERCE
 │ ├── customers_dataset.csv
 │ ├── orders_dataset.csv
 │ ├── order_items_dataset.csv
-│ └── ...
+│ └── lainnya..
 ├── Proyek_Analisis_Data.ipynb
 ├── requirements.txt
 └── README.md
+
+---
 
 ## 🛠 Library yang Digunakan
 
@@ -31,23 +50,63 @@ DASBOARD E-COMMERCE
 - folium
 - streamlit-folium
 
-## ▶️ Cara Menjalankan Dashboard
+---
 
-1. Buka terminal (Command Prompt / PowerShell / Terminal VS Code)
-2. Masuk ke folder proyek
-3. Install dependencies:
-   pip install -r requirements.txt
-4. Jalankan dashboard:
-   python -m streamlit run dashboard/dashboard.py
-5. Dashboard akan terbuka otomatis di browser.
+## ⚙️ Cara Menjalankan Dashboard
+
+Masuk ke folder project:
+
+cd dashboard-ecommerce
+
+---
+
+### 2️⃣ Buat Virtual Environment
+
+python -m venv venv
+
+---
+
+### 3️⃣ Aktifkan Virtual Environment
+
+**Windows:**
+
+venv\Scripts\activate
+
+**Mac/Linux:**
+
+source venv/bin/activate
+
+---
+
+### 4️⃣ Install Dependencies
+
+pip install -r requirements.txt
+
+---
+
+### 5️⃣ Jalankan Dashboard
+
+streamlit run dashboard/dashboard.py
+
+Dashboard akan otomatis terbuka di browser.
+
+---
 
 ## 📊 Insight yang Ditampilkan
 
-- Total Revenue
-- Total Orders
-- Total Customers
-- Tren Penjualan Bulanan
-- Segmentasi Pelanggan (RFM)
-- Distribusi Pelanggan berdasarkan Lokasi
+Dashboard menyediakan fitur interaktif sehingga pengguna dapat mengeksplorasi data lebih dalam.
 
-Ari Dwi Prasetyo - E-Commerce Dataset
+Beberapa insight utama:
+
+✅ Total Revenue  
+✅ Total Orders  
+✅ Total Customers  
+✅ Monthly Revenue Trend  
+✅ Customer Segmentation (RFM)  
+✅ Customer Geographic Distribution
+
+---
+
+## Dataset
+
+Dataset: **Brazilian E-Commerce Public Dataset by Olist**
