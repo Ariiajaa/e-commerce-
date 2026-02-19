@@ -632,7 +632,14 @@ if main_df is not None:
         
         try:
             # Load geolocation data
-            geolocation_df = pd.read_csv("geolocation_dataset.csv")
+            import os
+            import pandas as pd
+
+            BASE_DIR = os.path.dirname(__file__)
+            DATA_PATH = os.path.join(BASE_DIR, "..", "data", "geolocation_dataset.csv")
+
+            geolocation_df = pd.read_csv(DATA_PATH)
+
             
             # Merge with customers
             customers_geo = customers_df.merge(
