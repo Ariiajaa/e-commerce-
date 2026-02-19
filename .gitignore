@@ -14,6 +14,3 @@ __pycache__/
 # Mac / Windows hidden files
 .DS_Store
 Thumbs.db
-
-# Large raw data (optional)
-data/
