@@ -21,11 +21,12 @@ st.markdown("""
     .main {
         padding: 0rem 1rem;
     }
-    .stMetric {
-        background-color: #f0f2f6;
-        padding: 15px;
-        border-radius: 10px;
-    }
+   .stMetric {
+    background: linear-gradient(145deg, #1e1e1e, #2a2a2a);
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #333;
+}
     h1 {
         color: #1f77b4;
     }
